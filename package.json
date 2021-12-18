@@ -1,0 +1,30 @@
+{
+  "name": "@meakle/translate",
+  "version": "0.0.1",
+  "bin": {
+    "translate": "dist/cli.js"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "start": "tsc && node dist/cli.js",
+    "build": "tsc",
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix",
+    "check:key": "node script/checkKeyIsNull.js"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "@types/node": "^16.11.13",
+    "husky": "^7.0.0",
+    "ts-standard": "^11.0.0",
+    "typescript": "4.4.4"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "crypto-js": "^4.1.1"
+  }
+}
